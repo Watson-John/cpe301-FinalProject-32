@@ -20,5 +20,21 @@
  
  [Arduino Pinout Diagram](http://domoticx.com/wp-content/uploads/2016/05/Arduino-MEGA-pinout.jpg)
  
- 
+## Quick Tips
+```
+  //set PB 0-3 to INPUT (input = 0)
+  *ddr_b &= 0x0;
+
+  //set PK 0-7 to OUTPUT (output = 1)
+  *ddr_k = 0xFF;
+
+   // enable the pullup resistor on PB 0 - 3
+  *port_b |= 0xFF;
+```
+```
+// if the pin is high
+  if(*pin_b & 0x10){
+       
+  }
+ ```
  
