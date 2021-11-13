@@ -34,7 +34,19 @@
 ```
 // if the pin is high
   if(*pin_b & 0x10){
-       
+
   }
  ```
- 
+
+ ## Library Usage
+
+| Component  | Library Ok? |
+| ------------- |:-------------:|
+| DC Motor      | No|
+| Servo Moto    | **Yes**|
+| DHT11         | **Yes**|
+| LCD           | **Yes**|
+| Water Senso   | No|
+| DS 1307 RTC   | **Yes**|
+| Potentiometer | No |
+| Thermister    | No     |
