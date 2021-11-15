@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <Servo.h>
 #include <LiquidCrystal.h>
 #include <DS3231.h>

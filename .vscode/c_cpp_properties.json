@@ -4,12 +4,18 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/Libraries/DHT_sensor_library-1.4.2"
+                "${workspaceFolder}/Libraries/DHT",
+                "${workspaceFolder}/Libraries/DS1307",
+                "${workspaceFolder}/Libraries/LiquidCrystal",
+                "${workspaceFolder}/Libraries/Servo",
+                "${workspaceFolder}/Libraries/arduino"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "USBCON",
+                "ARDUINO = 10813"
             ],
             "compilerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
             "cStandard": "gnu17",
