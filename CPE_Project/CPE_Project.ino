@@ -1,4 +1,7 @@
-#include "DHT.h"
+#include <Servo.h>
+#include <LiquidCrystal.h>
+#include <DS3231.h>
+#include <dht_nonblocking.h>
 
 // Define Port E Register Pointers
 volatile unsigned char* port_e = (unsigned char*) 0x2E; 
