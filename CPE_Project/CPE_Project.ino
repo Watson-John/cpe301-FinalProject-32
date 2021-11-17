@@ -27,6 +27,7 @@ volatile unsigned char* pin_h  = (unsigned char*) 0x100;
 
 // ~~ Port H ~~~
 // Fan Motor:
+// Pin 17 - PH5 - Enable from L293D
 // Pin 16 - PH4 - In 1 OutPut
 // Pin 15 - PH3 - In 2 Output
 
@@ -46,6 +47,7 @@ void setup() {
 
   // ~~ Port H ~~
   //    Outputs
+  *ddr_h |= 0x01 << 5; // Fan enable
   *ddr_h |= 0x01 << 4; // Fan
   *ddr_h |= 0x01 << 3; // Fan
 
@@ -70,9 +72,31 @@ void loop() {
     Serial.println( temperature, 1 );
 
   }
+  else{
+    dc_fan();
+  }
 
 
 }
+
+void dc_fan(){
+//getTemp = true - in range ??
+ float temperature;
+ float humidity;
+
+if ( getTemperature( &temperature, &humidity ) == true ){
+  //Fan off\
+  // 5 and 4 and 3 off
+  *port_h &= 0x00;
+  }
+else{
+//Fan on 
+//5 and 4 on 3 off 
+  *port_h |= 0x30;
+}
+
+ 
+ }
 
 
 
