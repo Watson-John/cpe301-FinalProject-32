@@ -23,8 +23,8 @@ DHT_nonblocking dht_sensor( DHT_SENSOR_PIN, DHT_SENSOR_TYPE );
 
 // Water Level Sensor Input ~ Pin 3 - PE5
 // Servo                    ~ Pin 5 - PE3 (library)
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 // ~~~~~~~~~~~ Define Port H Register Pointers ~~~~~~~~~~~~~
 volatile unsigned char* port_h = (unsigned char*) 0x102;
@@ -36,7 +36,6 @@ volatile unsigned char* pin_h  = (unsigned char*) 0x100;
 // Pin 17 - PH5 - Enable from L293D
 // Pin 16 - PH4 - In 1 OutPut
 // Pin 15 - PH3 - In 2 Output
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // ~~~~~~~~~~~ Define Port H Register Pointers ~~~~~~~~~~~~~
@@ -59,7 +58,6 @@ int WGM_5_1 = 1;
 
 // Output Compare Register 5 B ~ This is where we store the Duty Cycle
 volatile unsigned char* OCR_5B  = (unsigned char*) 0x12A;
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
