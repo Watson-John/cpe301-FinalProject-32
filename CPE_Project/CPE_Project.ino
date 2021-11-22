@@ -60,6 +60,10 @@ int WGM_5_1 = 1;
 // Output Compare Register 5 B ~ This is where we store the Duty Cycle
 volatile unsigned char* OCR_5B  = (unsigned char*) 0x12A;
 
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(27, 26, 25, 24, 23, 22);
+
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
