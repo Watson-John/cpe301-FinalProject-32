@@ -58,7 +58,6 @@ int WGM_5_1 = 1;
 
 // Output Compare Register 5 B ~ This is where we store the Duty Cycle
 volatile unsigned char* OCR_5B  = (unsigned char*) 0x12A;
-<<<<<<< HEAD
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -80,8 +79,6 @@ LiquidCrystal lcd(22, 23, 24, 25, 26, 27);
 float temperature_threshold = 22.0;
 int   water_level_threshold = 80;
 enum all_states {IDlE, DISABLED, ERROR, RUNNING};
-=======
->>>>>>> 7eea7a53c2a51ead5ed89346278cba646692b871
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
